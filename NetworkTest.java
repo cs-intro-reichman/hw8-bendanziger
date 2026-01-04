@@ -5,7 +5,7 @@ public class NetworkTest {
         System.out.println("...To get started, creating a dummy network for testing the toString and getUser methods...\n");
         Network dummyNet = new Network(100, true);
         System.out.println(dummyNet);
-
+        
         System.out.println("Bar is a user in this network: " + ((dummyNet.getUser("Bar") != null) ? true : false));
         System.out.println("Gil is a user in this network: " + ((dummyNet.getUser("Gil") != null) ? true : false));
      
@@ -39,7 +39,7 @@ public class NetworkTest {
         net.addFollowee("Idan", "Neta");
 
         System.out.println(net);
-
+        //System.out.println(dummyNet.toString());
         System.out.println("\n...Suggesting to Alex which user to follow...");
         System.out.println("Alex: based on our social network analysis, we recommemd to follow " + net.recommendWhoToFollow("Alex"));
         
